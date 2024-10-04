@@ -1,0 +1,26 @@
+@import './../mixins/text';
+
+.content-clip {
+    background-image: url('./../../assets/images/bg_image.png');
+   
+    background-size: contain;
+    background-position: center;
+        background-clip: text;
+    --webkit-background-clip: text;
+    --moz-background-clip: text;
+     color: transparent;
+     text-transform: uppercase;
+      
+}
+.bg_text{
+
+    background: rgb(105,59,147);
+    background: linear-gradient(90deg, rgba(105,59,147,0.10314360119047616) 0%, rgba(107,125,195,0.14778645833333337) 50%, rgba(70,144,212,0.09719122023809523) 100%);
+}
+
+@font-face {
+    font-family: 'reg_caladea';
+    src: url('./../../fonts/caladea-regular-webfont.woff');
+}
+
+

@@ -1,0 +1,290 @@
+@import './../mixins/media-queries';
+@import './color';
+@import './../mixins/contentSize';
+
+// base reset
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+}
+
+
+@layer base {
+    :root {
+        --background: 299 30% 98%;
+        --foreground: 299 61% 4%;
+        --muted: 299 7% 91%;
+        --muted-foreground: 299 8% 31%;
+        --popover: 299 30% 97%;
+        --popover-foreground: 299 61% 3%;
+        --card: 299 30% 97%;
+        --card-foreground: 299 61% 3%;
+        --border: 299 11% 88%;
+        --input: 299 11% 88%;
+        --primary: 299 54% 80%;
+        --primary-foreground: 299 54% 20%;
+        --secondary: 299 5% 80%;
+        --secondary-foreground: 299 5% 20%;
+        --accent: 299 15% 73%;
+        --accent-foreground: 299 15% 13%;
+        --destructive: 10 93% 22%;
+        --destructive-foreground: 10 93% 82%;
+        --ring: 299 54% 80%;
+        --radius: 0.5rem;
+    }
+
+    .dark {
+        --background: 299 43% 2%;
+        --foreground: 299 11% 100%;
+        --muted: 299 7% 9%;
+        --muted-foreground: 299 8% 69%;
+        --popover: 299 43% 3%;
+        --popover-foreground: 0 0% 100%;
+        --card: 299 43% 3%;
+        --card-foreground: 0 0% 100%;
+        --border: 299 11% 14%;
+        --input: 299 11% 14%;
+        --primary: 299 54% 80%;
+        --primary-foreground: 299 54% 20%;
+        --secondary: 299 3% 19%;
+        --secondary-foreground: 299 3% 79%;
+        --accent: 299 11% 25%;
+        --accent-foreground: 299 11% 85%;
+        --destructive: 10 93% 55%;
+        --destructive-foreground: 0 0% 100%;
+        --ring: 299 54% 80%;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+
+    .dark {}
+}
+
+body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: reg_caladea;
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+
+// --- responsivity --//
+body {
+    // mobile par défaut (mobile)
+
+
+    @include respond-to('tablet') {
+        // tablette 
+    }
+
+    @include respond-to('desktop') {
+        // ordinateur
+    }
+
+    // background-image: url('./../../assets/images/bg_image.png');
+}
+
+html {
+    // mobile par défaut (mobile)
+    line-height: 2vh;
+
+    @include respond-to('tablet') {
+        // tablette 
+    }
+
+    @include respond-to('desktop') {
+        // ordinateur
+    }
+}
+
+.global-container {
+    background: $bg;
+    width: 100%;
+    height: 100%;
+
+
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    gap: 6vh;
+}
+
+.bordure {
+    border-radius: 6px;
+    border: dashed 1px $base;
+}
+
+.hero {
+// marge content
+@include content_pad();
+
+    &__navigation {
+        
+        &:hover {
+            background-color: $base;
+            color: $fond_clair;
+            border: solid 2px $fond_clair;
+        }
+    }
+}
+
+.bg-img{
+    background-image: url('./../../assets/images/bg_light.png');
+
+    background-size: cover;
+    background-position: center;
+border-radius: 1vh;
+     
+}
+
+.bg-text{
+    background: $bg-text;
+}
