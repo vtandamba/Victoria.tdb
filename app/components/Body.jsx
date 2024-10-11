@@ -5,8 +5,10 @@ import Marquee from '@/components/ui/marquee'
 import IconCloud from '@/components/ui/icon-cloud'
 import { MarqueeDemo } from './MarqueeDemo'
 import { IconCloudDemo } from './IconCloudDemo'
-import Projects from './Projects'
+import ProjetComponent from './ProjetComponent'
 import Skills from './Skills'
+ 
+import { TimelineDemo } from './TimelineDemo'
 const Body = () => {
     return (
         <div>
@@ -15,16 +17,18 @@ const Body = () => {
                 {/* a propos */}
                 <About />
             </section>
-
             <section>
+            
+            <TimelineDemo />
                 {/* parcours professionnel */}
-
+           
 
             </section>
 
             <section>
+
                 {/* projets */}
-                <Projects />
+                <ProjetComponent />
             </section>
 
             <section>
