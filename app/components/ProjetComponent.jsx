@@ -6,14 +6,26 @@ import sass from './../assets/images/sass-icon.svg'
 import git from './../assets/images/mdi_github.svg'
 import sf from './../assets/images/sf-icon.svg'
 import external_link from './../assets/images/mage_external-link.svg'
-import artfullcode from './../assets/images/ARTFULLCODE.svg'
+import artfullcode from './../assets/images/ARTFULLCODE(1).svg'
 import lettreLumiere from './../assets/images/lettres_lumiere(1).svg'
 import portfolio from './../assets/images/header_main.svg'
 
 const ProjetComponent = () => {
     return (
         <>
-            <section >
+
+
+            <div className="max-w-7xl mx-auto py-10 px-4 md:px-8 lg:px-10 backdrop-blur-sm" >
+                <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
+                    Une selection de projets
+                </h2>
+                <p className="text-neutral-700 dark:text-neutral-300 text-lg md:text-base max-w-sm">
+                    {/* I&apos;ve been working on Aceternity for the past 2 years. Here&apos;s
+          a timeline of my journey. */}
+                    Dans cette section je vous présenterai mon parcours et les experiences professionnelles dans des environnemennent dynamiques
+                </p>
+            </div>
+            <section className='max-w-7xl mx-auto py-10 px-4 md:px-8 lg:px-10'>
 
 
                 <div className=' flex p-6 flex-col  lg:flex-row gap-3 '>

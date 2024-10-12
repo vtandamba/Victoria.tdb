@@ -62,21 +62,21 @@ export function TimelineDemo() {
   ];
   return (
     <>
-    
-    <div className="max-w-7xl mx-auto py-10 px-4 md:px-8 lg:px-10">
+
+      <div className="max-w-7xl mx-auto py-10 px-4 md:px-8 lg:px-10">
         <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-         Mon parcours et mes expériences professionnelles
+          Mon parcours et mes expériences professionnelles
         </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
+        <p className="text-neutral-700 dark:text-neutral-300 text-lg md:text-base max-w-sm">
           {/* I&apos;ve been working on Aceternity for the past 2 years. Here&apos;s
           a timeline of my journey. */}
           Dans cette section je vous présenterai mon parcours et les experiences professionnelles dans des environnemennent dynamiques
         </p>
       </div>
 
-      
-    <div className="w-full">
-      <Timeline data={data} />
-    </div>
- </> );
+
+      <div className="w-full">
+        <Timeline data={data} />
+      </div>
+    </>);
 }

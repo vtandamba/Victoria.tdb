@@ -6,22 +6,20 @@ import IconCloud from '@/components/ui/icon-cloud'
 import { MarqueeDemo } from './MarqueeDemo'
 import { IconCloudDemo } from './IconCloudDemo'
 import ProjetComponent from './ProjetComponent'
-import Skills from './Skills'
- 
+import Services from './Services'
+import ContactForm from './ContactForm'
+
 import { TimelineDemo } from './TimelineDemo'
 const Body = () => {
     return (
-        <div>
+        <div className=' "max-w-6xl  py-10 px-4 md:px-8 lg:px-10'>
 
-            <section className=''>
-                {/* a propos */}
-                <About />
-            </section>
+
             <section>
-            
-            <TimelineDemo />
+
+                <TimelineDemo />
                 {/* parcours professionnel */}
-           
+
 
             </section>
 
@@ -33,12 +31,12 @@ const Body = () => {
 
             <section>
                 {/* compétences carousel */}
-                <Skills />
+                <Services />
             </section>
             <section>
                 {/* globe */}
 
-                <IconCloudDemo />
+                {/* <IconCloudDemo /> */}
             </section>
 
             <section>
@@ -48,7 +46,7 @@ const Body = () => {
 
             <section>
                 {/* contact form  */}
-
+<ContactForm/>
             </section>
         </div>
     )
