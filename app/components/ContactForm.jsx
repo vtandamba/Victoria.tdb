@@ -33,7 +33,7 @@ const ContactForm = () => {
                 {/* Section des réseaux sociaux et e-mail */}
                 <h2 className='text-3xl mb-6 font-bold'>Me Contacter</h2>
                 <div className='flex flex-col lg:flex-row justify-betweengap-6'>
-                    <section className='w-full lg:w-1/2 flex flex-col    gap-4'>
+                    <section className='w-full lg:w-1/2 flex flex-col sm:items-center   gap-4'>
 
                         <div className='flex flex-col items-center   gap-4 justify-center w-2/3 bg-purple-300 py-5 rounded-sm'>
 
