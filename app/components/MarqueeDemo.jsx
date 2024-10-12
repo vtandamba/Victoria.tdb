@@ -56,7 +56,7 @@ const ReviewCard = ({ img, name, body }) => {
   return (
     <figure
       className={cn(
-        "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
+        "relative  w-32 lg:w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
@@ -73,7 +73,7 @@ const ReviewCard = ({ img, name, body }) => {
 
 export function MarqueeDemo() {
   return (
-    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background  ">
+    <div className="relative flex   w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background  ">
       <Marquee pauseOnHover className="[--duration:20s]">
         {firstRow.map((review) => (
           <ReviewCard key={review.name} {...review} />

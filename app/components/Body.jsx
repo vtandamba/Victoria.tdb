@@ -7,13 +7,14 @@ import { MarqueeDemo } from './MarqueeDemo'
 import { IconCloudDemo } from './IconCloudDemo'
 import ProjetComponent from './ProjetComponent'
 import Services from './Services'
+import Footer from './Footer'
 import ContactForm from './ContactForm'
 import { Actu } from './Actu'
 
 import { TimelineDemo } from './TimelineDemo'
 const Body = () => {
     return (
-        <div className=' "max-w-6xl  py-10 px-4 md:px-8 lg:px-10'>
+        <><div className=' "max-w-6xl  py-10 px-4 md:px-8 lg:px-10'>
             <div class="p-6 rounded-lg bg-card text-card-foreground">
                 <Actu />
             </div>
@@ -52,7 +53,7 @@ const Body = () => {
                 {/* contact form  */}
                 <ContactForm />
             </section>
-        </div>
+        </div><Footer /></>
     )
 }
 
