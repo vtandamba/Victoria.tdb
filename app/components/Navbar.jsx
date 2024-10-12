@@ -1,32 +1,68 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../assets/images/logo.svg';
 import Image from 'next/image';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <>
-      <header className='navbar items-center p-3 flex   fixed mb-4 gap-x-48 backdrop-blur-sm md:backdrop-blur-lg w-full z-50'>
-        {/* Logo */}
-        {/* <Image className='flex-none w-32' src={logo} alt="VICTORIA" /> */}
-        <aside className='flex-none text-3xl content-clip text-center'>VICTORIA</aside>
+    <header className='navbar p-4 flex items-center justify-between fixed top-0 left-0 w-full bg-white backdrop-blur-md shadow-lg z-50'>
+      {/* Logo */}
+      <div className="text-3xl font-bold">VICTORIA</div>
 
-        <div className='navbar flex-1'>
-          <nav className="nav">
-            <input className="nav__input" type="checkbox" id="icone-burger-close" />
-            <label className="nav__button" htmlFor="icone-burger-close"></label>
-            <ul className="nav__menu backdrop-blur-sm md:backdrop-blur-none md:bg-transparent bg-white">
-              <li className="nav__elt"><a href="#">Accueil</a></li>
-              <li className="nav__elt"><a href="#">Profil</a></li>
-              <li className="nav__elt"><a href="#">Projets</a></li>
-              <li className="nav__elt"><a href="#">Compétences</a></li>
-              <li className="nav__elt"><a href="#">Qualités</a></li>
-              <li className="nav__elt"><a href="#">Contacts</a></li>
+      {/* Burger menu button for mobile */}
+      <div className='md:hidden'>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="text-gray-500 hover:text-black focus:outline-none"
+        >
+          {/* Burger icon */}
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d={!isOpen ? "M4 6h16M4 12h16m-7 6h7" : "M6 18L18 6M6 6l12 12"}
+            />
+          </svg>
+        </button>
+      </div>
 
-            </ul>
-          </nav>
-        </div>
-      </header>
-    </>
+      {/* Navigation menu */}
+      <nav
+        className={`${
+          isOpen ? 'block' : 'hidden'
+        } lg:inset-0 absolute top-16 left-0 w-full md:relative md:block md:flex-grow md:flex md:items-center md:justify-end transition-transform duration-500 ease-out`}
+      
+      >
+        <ul className="flex flex-col md:flex-row md:space-x-8 items-center bg-white md:bg-transparent">
+          <li className="py-2 md:py-0 w-full text-center border-b md:border-none">
+            <a href="#" className="block py-2 text-gray-700 hover:bg-purple-100 hover:border-l-4 border-purple-600 transition-colors duration-200">Accueil</a>
+          </li>
+          <li className="py-2 md:py-0 w-full text-center border-b md:border-none">
+            <a href="#" className="block py-2 text-gray-700 hover:bg-purple-100 hover:border-l-4 border-purple-600 transition-colors duration-200">Profil</a>
+          </li>
+          <li className="py-2 md:py-0 w-full text-center border-b md:border-none">
+            <a href="#" className="block py-2 text-gray-700 hover:bg-purple-100 hover:border-l-4 border-purple-600 transition-colors duration-200">Projets</a>
+          </li>
+          <li className="py-2 md:py-0 w-full text-center border-b md:border-none">
+            <a href="#" className="block py-2 text-gray-700 hover:bg-purple-100 hover:border-l-4 border-purple-600 transition-colors duration-200">Compétences</a>
+          </li>
+          <li className="py-2 md:py-0 w-full text-center border-b md:border-none">
+            <a href="#" className="block py-2 text-gray-700 hover:bg-purple-100 hover:border-l-4 border-purple-600 transition-colors duration-200">Qualités</a>
+          </li>
+          <li className="py-2 md:py-0 w-full text-center border-b md:border-none">
+            <a href="#" className="block py-2 text-gray-700 hover:bg-purple-100 hover:border-l-4 border-purple-600 transition-colors duration-200">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 }
 

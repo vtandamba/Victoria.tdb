@@ -28,7 +28,7 @@ const ProjetComponent = () => {
             <section className='max-w-7xl mx-auto py-10 px-4 md:px-8 lg:px-10'>
 
 
-                <div className=' flex p-6 flex-col  lg:flex-row gap-3 '>
+                <div className=' flex py-6 flex-col  lg:flex-row gap-3 '>
 
                     <Projects
                         srcImg={artfullcode}
