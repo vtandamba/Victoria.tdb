@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Projects = ({ title, srcImg, description, logoDev = [], logoAcces = [] }) => {
+const Projects = ({ title, srcImg, description, logoDev = [], logoAcces = [], linkAcces = [] }) => {
+    
     return (
-        <aside className='flex flex-col rounded-sm lg:w-1/3   border border-dashed border-accent p-4 transition-transform duration-300  hover:shadow-lg dark:hover:shadow-md'>
+        <aside className='flex flex-col rounded-sm lg:w-1/3 border border-dashed border-accent p-4 transition-transform duration-300 hover:shadow-lg dark:hover:shadow-md'>
             <figure className='rounded-sm min-h-full w-full flex flex-col justify-evenly items-center gap-2'>
                 {/* Image principale du projet avec effet hover */}
                 <Image
@@ -41,17 +42,23 @@ const Projects = ({ title, srcImg, description, logoDev = [], logoAcces = [] }) 
                             ))}
                         </div>
 
-                        {/* Logos Access */}
+                        {/* Logos Access avec liens */}
                         <div className='flex gap-3 mt-4'>
                             {logoAcces.map((logo, index) => (
-                                <Image
+                                <a
                                     key={index}
+                                    href={linkAcces[index]} // Utilisation des liens associés
+                                    target="_blank" // Ouvre dans un nouvel onglet
+                                    rel="noopener noreferrer" // Sécurité supplémentaire
                                     className='transition-transform duration-300 hover:scale-110'
-                                    src={logo}
-                                    width={32}   // Taille plus petite pour mobile
-                                    height={32}  // Taille plus petite pour mobile
-                                    alt={`logoAcces-${index}`}
-                                />
+                                >
+                                    <Image
+                                        src={logo}
+                                        width={32}   // Taille plus petite pour mobile
+                                        height={32}  // Taille plus petite pour mobile
+                                        alt={`logoAcces-${index}`}
+                                    />
+                                </a>
                             ))}
                         </div>
                     </div>
