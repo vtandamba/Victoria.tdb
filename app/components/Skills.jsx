@@ -25,7 +25,7 @@ const Skills = () => {
 
         <section className='flex flex-col p-6 gap-3 rounded-sm '>
             <aside>
-                <div className='flex flex-col gap-5  p-2 bg-fuchsia-100  bordure'>
+                <div className='flex flex-col gap-5  p-2 bg-card  rounded-[6px] border border-dashed border-accent'>
                     <Image src={data} />
                     <div>
                         {/* description compétences */}

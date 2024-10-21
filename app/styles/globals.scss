@@ -5,6 +5,7 @@
 @import './base/color';
 @import './base/text';
 @import './components/nav';
+
 @layer base {
   :root {
     --background: 267 61% 98%;
@@ -57,6 +58,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }

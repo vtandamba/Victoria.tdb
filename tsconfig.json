@@ -23,15 +23,19 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
-    }
+      "@/*": [
+        "./*"
+      ]
+    },
+    "strictNullChecks": true
   },
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "app/components/DynamicIconCloud.jsx"  ],
+    "**/*.tsx",
+    "app/components/DynamicIconCloud.jsx"
+  ],
   "exclude": [
     "node_modules"
   ]

@@ -62,11 +62,11 @@ export function TimelineDemo() {
   return (
     <>
       <div className="max-w-7xl mx-auto py-10 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-primary dark:text-primary-foreground max-w-4xl">
+        <h2 id='parcours' className="text-lg md:text-4xl mb-4 text-primary dark:text-primary-foreground max-w-4xl">
           Mon parcours et mes expériences professionnelles
         </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-lg md:text-base max-w-sm">
-          Dans cette section je vous présenterai mon parcours et les expériences professionnelles dans des environnements dynamiques.
+        <p className=" mb-4  text-muted-foreground text-xl max-w-md ">
+          Découvrez mon parcours, mes formations et les expériences professionnelles acquises dans des environnements dynamiques.
         </p>
       </div>
 

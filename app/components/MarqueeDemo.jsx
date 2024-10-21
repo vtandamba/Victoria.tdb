@@ -36,7 +36,7 @@ const reviews = [
     img: docker,  // Passer l'image directement
   },
   {
-    name: "GitHub",
+    name: "Git",
     img: git,  // Passer l'image directement
   },
   {

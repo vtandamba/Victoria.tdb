@@ -3,7 +3,7 @@ import React from 'react';
 
 const Projects = ({ title, srcImg, description, logoDev = [], logoAcces = [] }) => {
     return (
-        <aside className='flex flex-col rounded-sm lg:w-1/3 bordure p-4 transition-transform duration-300  hover:shadow-lg dark:hover:shadow-md'>
+        <aside className='flex flex-col rounded-sm lg:w-1/3   border border-dashed border-accent p-4 transition-transform duration-300  hover:shadow-lg dark:hover:shadow-md'>
             <figure className='rounded-sm min-h-full w-full flex flex-col justify-evenly items-center gap-2'>
                 {/* Image principale du projet avec effet hover */}
                 <Image
@@ -20,7 +20,7 @@ const Projects = ({ title, srcImg, description, logoDev = [], logoAcces = [] }) 
                         <h3 className='capitalize text-2xl text-primary dark:text-primary-foreground'>
                             {title}
                         </h3>
-                        <p className='text-xl text-secondary dark:text-secondary-foreground'>
+                        <p className='text-xl dark:text-secondary-foreground text-accent-foreground my-4'>
                             {description}
                         </p>
                     </div>

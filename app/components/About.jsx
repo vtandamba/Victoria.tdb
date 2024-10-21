@@ -14,7 +14,7 @@ const About = () => {
 
             <figure className='bg-img flex items-center flex-col justify-evenly gap-12 py-6'>
                 <Image className='rounded-sm mx-auto' src={profile} width={100} height={100} alt='Profile image' />
-                <div className='social flex rounded-md bg-fuchsia-100 bordure'>
+                <div className='social flex rounded-md bg-card   border border-dashed border-accent'>
                     <Image className='rounded-full m-3' src={git} width={30} height={30} alt='Git image' />
                     <Image className='rounded-full m-3' src={linkedin} width={30} height={30} alt='LinkedIn image' />
                     <Image className='rounded-full m-3' src={mail} width={30} height={30} alt='Mail image' />

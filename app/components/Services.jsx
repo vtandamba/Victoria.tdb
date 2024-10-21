@@ -1,8 +1,8 @@
-import { PersonStanding, Timer, Zap, ZoomIn, SquareCode, Database,Container, UsersRound } from 'lucide-react';
+import { PersonStanding, Timer, Zap, ZoomIn, SquareCode, Database, Container, UsersRound } from 'lucide-react';
 
 const ServiceBlock = ({ Icon, title, items }) => {
     return (
-        <div className=" relative flex gap-3 rounded-lg border-dashed md:block md:border md:p-5 transition-transform duration-300 hover:scale-105 hover:shadow-lg dark:hover:shadow-md">
+        <div className=" relative flex gap-3 rounded-lg border-dashed md:block md:border border-secondary md:p-5 transition-transform duration-300 hover:scale-105 hover:shadow-lg dark:hover:shadow-md">
             <span className="mb-8 flex size-10 shrink-0 items-center justify-center rounded-full bg-accent md:size-12 transition-transform duration-300 hover:scale-110">
                 <Icon className="size-5 md:size-6" />
             </span>
@@ -27,10 +27,10 @@ const Services = () => {
         <div className='flex flex-col justify-center'>
             <section className="max-w-7xl mx-auto pt-10 pb-2 px-4 md:px-8 lg:px-10">
                 <div className="container">
-                    <p className="mb-4 text-xs text-muted-foreground">Mes compétences techniques</p>
-                    <h2 className="text-3xl font-medium lg:text-4xl">
+                    <h2 id="competences" className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
                         Conception d'appli & site web et de bureau
                     </h2>
+                    <p className="mb-4  text-muted-foreground text-xl max-w-md">Mes compétences techniques</p>
                     <div className="mt-14 grid gap-6 md:grid-cols-2 lg:mt-20 lg:grid-cols-4">
                         {/* Bloc 1 */}
                         <ServiceBlock

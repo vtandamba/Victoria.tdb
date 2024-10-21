@@ -5,9 +5,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className='navbar p-4 flex items-center justify-between fixed top-0 left-0 w-full bg-white backdrop-blur-md shadow-lg z-50 dark:bg-gray-800'>
+    <header className='navbar p-4 flex items-center   justify-between fixed top-0 left-0 w-full bg-white backdrop-blur-md shadow-lg z-50 dark:bg-gray-800'>
       {/* Logo */}
-      <div className="text-3xl font-bold text-primary dark:text-primary-foreground">VICTORIA</div>
+      <div className="text-3xl font-bold text-primary dark:text-primary-foreground" >VICTORIA</div>
 
       {/* Burger menu button for mobile */}
       <div className='md:hidden'>
@@ -35,16 +35,15 @@ const Navbar = () => {
 
       {/* Navigation menu */}
       <nav
-        className={`${
-          isOpen ? 'block' : 'hidden'
-        } lg:inset-0 absolute top-16 left-0 w-full md:relative md:block md:flex-grow md:flex md:items-center md:justify-end transition-transform duration-500 ease-out`}
+        className={`${isOpen ? 'block top-16' : 'hidden'
+          } lg:inset-0 absolute top-0 left-0 w-full md:relative md:block md:flex-grow md:flex md:items-center md:justify-end transition-transform duration-500 ease-out`}
       >
-        <ul className="flex flex-col md:flex-row md:space-x-8 items-center bg-white md:bg-transparent dark:bg-gray-800">
-          {['Accueil', 'Profil', 'Projets', 'Compétences', 'Qualités', 'Contacts'].map((item) => (
-            <li key={item} className="py-2 md:py-0 w-full text-center border-b md:border-none">
+        <ul className="flex flex-col md:flex-row md:space-x-8 items-center md:items-center bg-white md:bg-transparent dark:bg-gray-800 lg:h-3/6 md:top-4 relative" >
+          {['Accueil', 'Parcours', 'Projets', 'Compétences', 'Contacts'].map((item) => (
+            <li key={item} className="border-solid border-2  p-1 px-4 w-full text-center border-b md:border-none   hover:bg-popover hover:border-l-4 border-popover transition-colors duration-200 dark:text-white dark:hover:bg-popover dark:hover:border-popover">
               <a
-                href="#"
-                className="block py-2 text-gray-700 hover:bg-purple-100 hover:border-l-4 border-purple-600 transition-colors duration-200 dark:text-white dark:hover:bg-purple-600 dark:hover:border-purple-400"
+                href={`#${item.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()}`}
+                className="block py-2 text-gray-700   border-popover transition-colors duration-200 dark:text-white "
               >
                 {item}
               </a>

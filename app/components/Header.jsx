@@ -6,6 +6,7 @@ import git from './../assets/icons/mdi_github(1).svg';
 import linkedin from './../assets/icons/line-md_linkedin.svg';
 import mail from './../assets/icons/mdi-mail.svg';
 import Link from 'next/link';
+import { Github, Mail, Linkedin } from 'lucide-react';
 
 const Header = () => {
     return (
@@ -20,53 +21,86 @@ const Header = () => {
                         Une développeuse Full Stack passionnée qui repousse les frontières de la technologie en alliant créativité et expertise technique.
                     </h2>
 
-                    <aside className='hero__navigations flex justify-between lg:justify-start gap-6 my-12'>
+                    <aside className=' flex  lg:justify-start   my-12 items-center gap-x-32 w-max  '>
                         {/* Liens Me découvrir et Mon CV */}
                         <div className='flex gap-6'>
                             <p className='text-lg'>
-                                <Link href="#about" scroll={true}>
-                                    <span className='hero__navigation bg-accent text-primary dark:text-primary-foreground uppercase w-full min-h-1 p-3 rounded-md hover:bg-primary hover:text-white transition duration-200'>
+                                <Link href="#parcours" scroll={true}>
+                                    <span className="uppercase border-accent text-lg border-solid border-2  px-4 py-2 text-black backdrop-blur-sm  border-black rounded-md hover:shadow-[0px_0px_4px_4px_rgba(0,0,0,0.1)] bg-white/[0.2]  transition duration-200">
                                         Me découvrir
                                     </span>
                                 </Link>
                             </p>
                             <p className='text-lg'>
-                                <span className='hero__navigation bg-accent text-primary dark:text-primary-foreground uppercase w-full min-h-1 p-3 rounded-md hover:bg-primary hover:text-white transition duration-200'>
+                                <a
+                                    // href="./../public/pdf/A4-CV-tandambaVictoria.pdf"
+                                    href="./../assets/pdf/A4-CV-tandambaVictoria.pdf"
+                                    download="./../assets/pdf/A4-CV-tandambaVictoria.pdf"
+                                    className='uppercase border-solid border-2 px-4 py-2 text-black backdrop-blur-sm border-accent border-black rounded-md hover:shadow-[0px_0px_4px_4px_rgba(0,0,0,0.1)] bg-white/[0.2] text-lg transition duration-200'
+                                >
                                     Mon CV
-                                </span>
+                                </a>
                             </p>
+
                         </div>
 
                         {/* Icônes Sociales */}
-                        <div className='hidden lg:flex social justify-end gap-4'>
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-75 transition-opacity duration-300">
-                                <Image className='rounded-full' src={git} width={30} height={30} alt='Git image' />
+                        <div className='hidden lg:flex social justify-end gap-4 border-double border-accent rounded-md px-2 py-2 border-2'>
+                            <a
+                                href="https://github.com/vtandamba"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:opacity-75 transition-opacity duration-300"
+                            >
+                                <Github />
                             </a>
-                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-75 transition-opacity duration-300">
-                                <Image className='rounded-full' src={linkedin} width={30} height={30} alt='LinkedIn image' />
+                            <a
+                                href="https://www.linkedin.com/in/victoria-tandamba"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:opacity-75 transition-opacity duration-300"
+                            >
+                                <Linkedin />
                             </a>
-                            <a href="mailto:victoriatandam@gmail.com" className="hover:opacity-75 transition-opacity duration-300">
-                                <Image className='rounded-full' src={mail} width={30} height={30} alt='Mail image' />
+                            <a
+                                href="mailto:victoriatandam@gmail.com"
+                                className="hover:opacity-75 transition-opacity duration-300"
+                            >
+                                <Mail />
                             </a>
                         </div>
+
                     </aside>
                 </section>
 
                 {/* Section image + icônes pour mobile */}
                 <section className='relative flex flex-col items-center p-6 gap-6'>
                     {/* Image de profil */}
-                    <Image className='rounded-sm backdrop-blur-sm bg-accent bordure' src={profile} width={300} height={300} alt="Profile image" />
+                    <Image className='rounded-sm backdrop-blur-sm bg-accent   border border-dashed border-accent' src={profile} width={300} height={300} alt="Profile image" />
 
                     {/* Icônes sociales (affichage sur mobile) */}
-                    <div className='flex justify-center gap-6 lg:hidden'>
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                            <Image src={git} width={30} height={30} alt='Git image' />
+                    <div className='flex justify-center gap-6 lg:hidden border-solid border-accent rounded-md px-4 py-2 border-2'>
+                        <a
+                            href="https://github.com/vtandamba"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:opacity-75 transition-opacity duration-300"
+                        >
+                            <Github />
                         </a>
-                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                            <Image src={linkedin} width={30} height={30} alt='LinkedIn image' />
+                        <a
+                            href="https://www.linkedin.com/in/victoria-tandamba"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:opacity-75 transition-opacity duration-300"
+                        >
+                            <Linkedin />
                         </a>
-                        <a href="mailto:victoriatandam@gmail.com">
-                            <Image src={mail} width={30} height={30} alt='Mail image' />
+                        <a
+                            href="mailto:victoriatandam@gmail.com"
+                            className="hover:opacity-75 transition-opacity duration-300"
+                        >
+                            <Mail />
                         </a>
                     </div>
                 </section>
