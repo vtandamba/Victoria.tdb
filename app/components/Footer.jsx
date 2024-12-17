@@ -12,7 +12,7 @@ const Footer = () => {
           <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-75 transition-opacity duration-300">
           <Github />
           </a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-75 transition-opacity duration-300">
+          <a  href="mailto:victoriatandam@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-75 transition-opacity duration-300">
           <Mail />          </a>
           <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-75 transition-opacity duration-300">
           <Linkedin />

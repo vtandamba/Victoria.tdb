@@ -14,7 +14,7 @@ const Header = () => {
 
             <Navbar />
             <div className='flex justify-center items-center lg:flex-row flex-col'>
-                <section className='hero mt-32 leading-relaxed lg:w-1/2'>
+                <section id='accueil' className='hero mt-32 leading-relaxed lg:w-1/2'>
                     <div className='text-4xl mb-12 leading-relaxed text-primary dark:text-primary-foreground'>
                         Bonjour 👋, je suis <span><h1 className='font-bold leading-relaxed'>Tandamba Victoria</h1></span>
                     </div>
