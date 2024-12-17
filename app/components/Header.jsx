@@ -11,6 +11,7 @@ import { Github, Mail, Linkedin } from 'lucide-react';
 const Header = () => {
     return (
         <>
+
             <Navbar />
             <div className='flex justify-center items-center lg:flex-row flex-col'>
                 <section className='hero mt-32 leading-relaxed lg:w-1/2'>
@@ -33,14 +34,14 @@ const Header = () => {
                             </p>
                             <p className='text-lg'>
                                 <a
-                                    // href="./../public/pdf/A4-CV-tandambaVictoria.pdf"
-                                    href="./../assets/pdf/A4-CV-tandambaVictoria.pdf"
-                                    download="./../assets/pdf/A4-CV-tandambaVictoria.pdf"
+                                    href="/pdf/A4-CV-tandambaVictoria.pdf"
+                                    download="CV-TandambaVictoria.pdf"
                                     className='uppercase border-solid border-2 px-4 py-2 text-black backdrop-blur-sm border-accent border-black rounded-md hover:shadow-[0px_0px_4px_4px_rgba(0,0,0,0.1)] bg-white/[0.2] text-lg transition duration-200'
                                 >
                                     Mon CV
                                 </a>
                             </p>
+
 
                         </div>
 

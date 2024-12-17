@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 import "./styles/globals.scss";
-import fav from './public/favicon.ico'
+import fav from '../public/favicon.ico'
 
  
 
@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
     <html lang="en"  className="scroll-smooth">
       <head>
         {/* Lien vers le favicon */}
-        <link rel="icon" href="./favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
         <meta name="description" content={metadata.description} />
         <title>{metadata.title}</title>
       </head>

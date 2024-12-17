@@ -15,10 +15,10 @@ export function TimelineDemo() {
       content: (
         <Parcours
           label="LICENCE 3"
-          description="Renforcement des compétences en développement et élargissement du champ pour réaliser mon projet professionnel."
+          description="Consolidation de mes compétences en développement et élargissement de mes connaissances afin d’atteindre mes objectifs professionnels. Cette licence me permettra également de faire de meilleurs choix pour la suite de mon parcours et d'orienter mon avenir de manière éclairée."
           img_src={tours}
           width={150}
-          alt={"université de tours à blois"}
+          alt={"Université de Tours à Blois"}
         />
       ),
     },
@@ -28,13 +28,13 @@ export function TimelineDemo() {
         <div className="flex flex-col gap-5">
           <Parcours
             label="LICENCE PROFESSIONNELLE FULLSTACK"
-            description="Cette formation m’a spécialisée en développement web et m’a fait découvrir le edge SEO à l’issue de mon stage réalisé à Neper la Rochelle."
+            description="Cette formation m’a permis de me spécialiser dans le développement web fullstack et d'approfondir des domaines comme le Edge SEO à travers mon stage chez Neper à La Rochelle."
             img_src={rochelle}
-            alt={"université de la rochelle"}
+            alt={"Université de La Rochelle"}
           />
           <Parcours
-            label="Stage à Neper"
-            description="Cette formation m’a spécialisée en développement web et m’a fait découvrir le edge SEO à l’issue de mon stage réalisé à Neper la Rochelle."
+            label="Stage chez Neper"
+            description="Durant mon stage, j’ai conçu un système d'automatisation du maillage interne basé sur un CDN avec Cloudflare. J'ai développé un back-office d'administration avec ReactJS et Supabase, accompagné d'un déploiement continu sur Cloudflare."
             img_src={neper}
           />
         </div>
@@ -46,18 +46,19 @@ export function TimelineDemo() {
         <div className="flex flex-col gap-5">
           <Parcours
             label="BTS SIO"
-            description="Cette formation m’a spécialisée en développement web et m’a fait découvrir le edge SEO à l’issue de mon stage réalisé à Neper la Rochelle."
+            description="Cette formation m’a permis d'acquérir des bases solides en développement web et d'apprendre les langages de programmation comme PHP et Java."
             img_src={laFutaie}
           />
           <Parcours
-            label="Stage à Sorefa SARL"
-            description="Cette formation m’a spécialisée en développement web et m’a fait découvrir le edge SEO à l’issue de mon stage réalisé à Neper la Rochelle."
+            label="Stage chez Sorefa SARL"
+            description="Lors de mon stage chez Sorefa SARL, j’ai conçu une application de gestion de devis en utilisant JavaFX et SceneBuilder, offrant une solution adaptée aux besoins de l'entreprise."
             img_src={sorefa}
           />
         </div>
       ),
     },
   ];
+  
 
   return (
     <>

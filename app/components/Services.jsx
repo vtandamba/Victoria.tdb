@@ -27,7 +27,7 @@ const Services = () => {
         <div className='flex flex-col justify-center'>
             <section className="max-w-7xl mx-auto pt-10 pb-2 px-4 md:px-8 lg:px-10">
                 <div className="container">
-                    <h2 id="competences" className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
+                    <h2 id="competences" className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl text-primary dark:text-primary-foreground">
                         Conception d'appli & site web et de bureau
                     </h2>
                     <p className="mb-4  text-muted-foreground text-xl max-w-md">Mes compétences techniques</p>

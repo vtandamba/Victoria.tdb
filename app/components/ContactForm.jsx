@@ -49,7 +49,7 @@ const ContactForm = () => {
             </p>
 
             <div className='flex flex-col lg:flex-row justify-between gap-6'>
-                <section className='w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center gap-4'>
+                <section className='w-full lg:w-1/2 lg:flex flex-col items-center lg:items-start justify-center gap-4  hidden'>
                     <div onClick={handleEmailClick} className='flex flex-col items-center gap-4 justify-center w-2/3 bg-accent py-5 rounded-sm'>
                         <Mail size={32} className='cursor-pointer stroke-primary fill-secondary' />
                         <span className="text-muted-foreground">victoriatandam@gmail.com</span>

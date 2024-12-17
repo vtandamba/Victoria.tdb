@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Linkedin, Github,Mail } from 'lucide-react';
+import { Linkedin, Github,Mail, Heart } from 'lucide-react';
 // Assurez-vous d'avoir l'icône Twitter
 
 const Footer = () => {
@@ -21,7 +21,7 @@ const Footer = () => {
 
         {/* Message de copyright */}
         <div className="text-center text-sm">
-          Fait avec amour en Next.js 2024 - 2025
+          Fait avec <Heart className='inline-block w-3 text-primary' /> en Next.js 2024 - 2025
         </div>
       </div>
     </footer>

@@ -9,12 +9,14 @@ import external_link from './../assets/images/mage_external-link.svg';
 import artfullcode from './../assets/images/ARTFULLCODE(1).svg';
 import lettreLumiere from './../assets/images/lettres_lumiere(1).svg';
 import portfolio from './../assets/images/header_main.svg';
+import { GraduationCap, Briefcase } from "lucide-react";
+
 
 const ProjetComponent = () => {
     return (
         <>
             <div id="projets" className="max-w-7xl mx-auto py-10 px-4 md:px-8 lg:px-10 backdrop-blur-sm" >
-                <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
+                <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl text-primary dark:text-primary-foreground">
                     Mes projets récents
                 </h2>
                 <p className="mb-4 text-muted-foreground text-xl max-w-md">
@@ -46,7 +48,7 @@ const ProjetComponent = () => {
                         title={'Portfolio'}
                         srcImg={portfolio}
                         description={"Mon portfolio qui décrit mon parcours mes compétences et mes expériences professionnelles."}
-                        logoDev={[sass, react_icon, sf]}
+                        logoDev={[sass, react_icon]}
                         logoAcces={[git, external_link]}
                         linkAcces={['https://github.com/vtandamba/Victoria.tdb', 'https://victoria-tdb.vercel.app']}
                     />
