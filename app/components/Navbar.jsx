@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className='navbar p-4 flex items-center   justify-between fixed top-0 left-0 w-full bg-white backdrop-blur-md shadow-lg z-50 dark:bg-gray-800'>
+    <header id='accueil' className='navbar p-4 flex items-center   justify-between fixed top-0 left-0 w-full bg-white backdrop-blur-md shadow-lg z-50 dark:bg-gray-800'>
       {/* Logo */}
       <div className="text-3xl font-bold text-primary dark:text-primary-foreground" >VICTORIA</div>
 
