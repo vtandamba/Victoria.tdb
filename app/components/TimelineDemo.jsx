@@ -13,6 +13,7 @@ export function TimelineDemo() {
     {
       title: "2024-2025",
       content: (
+        <div className="flex flex-col gap-5"> 
         <Parcours
           label="LICENCE 3"
           description="Consolidation de mes compétences en développement et élargissement de mes connaissances afin d’atteindre mes objectifs professionnels. Cette licence me permettra également de faire de meilleurs choix pour la suite de mon parcours et d'orienter mon avenir de manière éclairée."
@@ -20,6 +21,15 @@ export function TimelineDemo() {
           width={150}
           alt={"Université de Tours à Blois"}
         />
+
+<Parcours
+          label="CDD CHEZ NEPER"
+          description="Edge SEO : Développement d'un outils d'optimisation SEO en Cloudflare et ses services."
+          img_src={neper}
+          width={150}
+          alt={"Université de Tours à Blois"}
+        />
+        </div>
       ),
     },
     {
@@ -31,11 +41,13 @@ export function TimelineDemo() {
             description="Cette formation m’a permis de me spécialiser dans le développement web fullstack et d'approfondir des domaines comme le Edge SEO à travers mon stage chez Neper à La Rochelle."
             img_src={rochelle}
             alt={"Université de La Rochelle"}
+            width={150}
           />
           <Parcours
-            label="Stage chez Neper"
+            label="STAGE CHEZ NEPER"
             description="Durant mon stage, j’ai conçu un système d'automatisation du maillage interne basé sur un CDN avec Cloudflare. J'ai développé un back-office d'administration avec ReactJS et Supabase, accompagné d'un déploiement continu sur Cloudflare."
             img_src={neper}
+            width={150}
           />
         </div>
       ),
@@ -48,11 +60,13 @@ export function TimelineDemo() {
             label="BTS SIO"
             description="Cette formation m’a permis d'acquérir des bases solides en développement web et d'apprendre les langages de programmation comme PHP et Java."
             img_src={laFutaie}
+            width={150}
           />
           <Parcours
-            label="Stage chez Sorefa SARL"
+            label="STAGE CHEZ SOREFA SARL"
             description="Lors de mon stage chez Sorefa SARL, j’ai conçu une application de gestion de devis en utilisant JavaFX et SceneBuilder, offrant une solution adaptée aux besoins de l'entreprise."
             img_src={sorefa}
+            width={150}
           />
         </div>
       ),
