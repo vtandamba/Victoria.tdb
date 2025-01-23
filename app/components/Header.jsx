@@ -12,15 +12,14 @@ const Header = () => {
     return (
         <>
 
-            <Navbar  />
+            <Navbar />
             <div id='accueil' className='flex justify-center items-center lg:flex-row flex-col'>
-                <section  className='hero mt-32 leading-relaxed lg:w-1/2'>
+                <section className='hero mt-32 leading-relaxed lg:w-1/2'>
                     <div className='text-4xl mb-12 leading-relaxed text-primary dark:text-primary-foreground'>
                         Bonjour 👋, je suis <span><h1 className='font-bold leading-relaxed'>Tandamba Victoria</h1></span>
                     </div>
                     <h2 className='text-2xl leading-loose lg:w-9/12 text-muted-foreground dark:text-muted-foreground'>
-                        Une développeuse Full Stack passionnée qui repousse les frontières de la technologie en alliant créativité et expertise technique.
-                    </h2>
+                    Développeuse Full Stack passionnée, j'aime coder et explorer de nouvelles technologies. Je suis animée par un enthousiasme constant pour l'apprentissage continu et la découverte de nouveaux horizons.                    </h2>
 
                     <aside className=' flex  lg:justify-start   my-12 items-center gap-x-32 w-max  '>
                         {/* Liens Me découvrir et Mon CV */}
@@ -34,7 +33,7 @@ const Header = () => {
                             </p>
                             <p className='text-lg'>
                                 <a
-                                    href="/pdf/A4-CV-tandambaVictoria.pdf"
+                                    href="/pdf/Cv_tandamba_victoria.pdf"
                                     download="CV-TandambaVictoria.pdf"
                                     className='uppercase border-solid border-2 px-4 py-2 text-black backdrop-blur-sm border-accent border-black rounded-md hover:shadow-[0px_0px_4px_4px_rgba(0,0,0,0.1)] bg-white/[0.2] text-lg transition duration-200'
                                 >
