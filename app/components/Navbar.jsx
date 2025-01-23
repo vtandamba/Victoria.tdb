@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <header  className='navbar p-4 flex items-center   justify-between fixed top-0 left-0 w-full bg-white backdrop-blur-md shadow-lg z-50 dark:bg-gray-800'>
       {/* Logo */}
-      <div className="text-3xl font-bold text-primary dark:text-primary-foreground" >VICTORIA</div>
+      <div className="text-3xl font-bold text-primary dark:text-primary-foreground" > <a href="https://victoria-tdb.vercel.app/"> VICTORIA</a></div>
 
       {/* Burger menu button for mobile */}
       <div className='md:hidden'>
