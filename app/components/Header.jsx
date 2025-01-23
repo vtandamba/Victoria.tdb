@@ -33,8 +33,8 @@ const Header = () => {
                             </p>
                             <p className='text-lg'>
                                 <a
-                                    href="/pdf/Cv_tandamba_victoria.pdf"
-                                    download="Cv_tandamba_victoria.pdf"
+                                    href="/pdf/tandamba_victoria_cv.pdf"
+                                    download="tandamba_victoria_cv.pdf"
                                     className='uppercase border-solid border-2 px-4 py-2 text-black backdrop-blur-sm border-accent border-black rounded-md hover:shadow-[0px_0px_4px_4px_rgba(0,0,0,0.1)] bg-white/[0.2] text-lg transition duration-200'
                                 >
                                     Mon CV
