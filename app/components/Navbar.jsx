@@ -11,6 +11,7 @@ const Navbar = () => {
 
       {/* Burger menu button for mobile */}
       <div className='md:hidden'>
+      
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="text-gray-500 hover:text-black focus:outline-none"

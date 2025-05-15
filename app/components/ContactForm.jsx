@@ -45,7 +45,7 @@ const ContactForm = () => {
             <h2 id='contacts' className='text-3xl mb-6 font-bold text-primary dark:text-primary-foreground'>Me Contacter</h2>
             <p className=" mb-4  text-muted-foreground text-xl max-w-md ">
                 Merci de m'avoir lu! <br />
-                Actuellement je suis en<span className='text-primary'> recherche de stage</span>, mais je suis à ouverte à toute autre proposition.
+                Actuellement je suis en<span className='text-primary'> recherche d'une alternance</span>, mais je suis à ouverte à toute autre proposition.
             </p>
 
             <div className='flex flex-col lg:flex-row justify-between gap-6'>
